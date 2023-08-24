@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
   }
-  
+
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
@@ -79,6 +79,11 @@ section {
 #about {
     background-color: #ff8800;
     color: white;
+}
+
+#about p {
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center-align the text */
 }
 
 #projects {
