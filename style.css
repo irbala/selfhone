@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body, h1, h2, h3, p {
     margin: 0;
@@ -25,27 +25,24 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 60px; /* Set a fixed width for the navigation */
-    height: 100vh; /* Make the navigation full height */
-    background-color: #fff; /* Adjust background color */
+    width: 60px;
+    height: 100vh;
+    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     display: flex;
-    flex-direction: column; /* Align links vertically */
-    justify-content: space-around; /* Space evenly along the column */
-    align-items: center; /* Center-align items horizontally */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav ul {
- /*   list-style: none;
-    padding: 0;
-    margin: 0; disable for testing */
     display: none;
 }
 
 nav li {
     margin: 0;
-    margin-bottom: 35px; /* Add margin between navigation items */
+    margin-bottom: 35px;
 }
 
 nav a {
@@ -53,10 +50,10 @@ nav a {
     text-decoration: none;
     padding: 0.5rem 0;
     transition: color 0.3s ease;
-    writing-mode: vertical-lr; /* Set text to vertical writing mode */
+    writing-mode: vertical-lr;
     transform: rotate(180deg);
-    text-orientation: mixed; /* Allow mixed orientation for better legibility */
-    text-align: center; /* Center the text horizontally */
+    text-orientation: mixed;
+    text-align: center;
 }
 
 nav a:hover {
@@ -80,7 +77,6 @@ nav a:hover {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Animate the toggle button's icon when the menu is open */
 .menu-active .menu-icon {
     transform: rotate(45deg);
 }
@@ -90,7 +86,6 @@ nav a:hover {
     transform: rotate(-90deg);
 }
 
-/* Display the navigation menu when the toggle button is clicked */
 .menu-active nav ul {
     display: block;
 }
@@ -103,7 +98,7 @@ section {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    overflow: hidden; /* Prevent content from overflowing outside the section */
+    overflow: hidden;
 }
 
 #home {
@@ -117,8 +112,8 @@ section {
 }
 
 #about p {
-    max-width: 800px; /* Adjust the width as needed */
-    margin: 0 auto; /* Center-align the text */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #projects {
@@ -126,17 +121,15 @@ section {
     color: white;
 }
 
-/* Project Grid */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    align-items: center; /* Center-align items vertically */
-    justify-items: center; /* Center-align items horizontally */
+    align-items: center;
+    justify-items: center;
     padding: 2rem;
 }
 
-/* Individual Project Card */
 .project {
     background-color: #333;
     color: white;
@@ -144,8 +137,8 @@ section {
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Ensure cards take up full width */
-    max-width: 300px; /* Set maximum width for cards */
+    width: 100%;
+    max-width: 300px;
 }
 
 .project h3 {
@@ -179,7 +172,6 @@ section {
     color: #A9DBD8;
 }
 
-/* Go Up Button Styling */
 .go-up-button {
     position: fixed;
     bottom: 20px;
@@ -203,7 +195,6 @@ section {
     background-color: #DAF0EE;
 }
 
-/* Scroll Fade Animation */
 .scroll-fade {
     opacity: 0;
     transform: translateY(20px);
@@ -215,34 +206,28 @@ section {
     transform: translateY(0);
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 768px) {
     body {
-        padding-top: 60px; /* Add padding to the top of the body to make space for the fixed navigation */
+        padding-top: 60px;
     }
 
-    /* Center-align text */
     h1, h2, p {
         text-align: center;
     }
 
-    /* Adjust padding for better spacing */
     section {
         padding: 1rem;
     }
 
-    /* Adjust font size for better readability */
     h1 {
         font-size: 2rem;
     }
 
-    /* Adjust project width for better spacing */
     .project {
         width: 90%;
         margin: 0 auto;
     }
 
-    /* Adjust Go Up button position for better visibility */
     .go-up-button {
         position: fixed;
         bottom: 20px;
@@ -250,31 +235,30 @@ section {
     }
 
     nav {
-        position: static; /* Remove the fixed positioning */
-        width: auto; /* Remove the fixed width */
-        height: auto; /* Remove the fixed height */
-        background-color: transparent; /* Remove the background color */
-        box-shadow: none; /* Remove the box shadow */
-        flex-direction: row; /* Change to horizontal layout */
-        align-items: center; /* Center-align items horizontally */
-        justify-content: space-around; /* Space items evenly along the row */
+        position: fixed;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        box-shadow: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
     }
 
     nav ul {
         display: flex;
-        flex-direction: row; /* Arrange menu items horizontally */
-        justify-content: center; /* Center-align menu items horizontally */
-        align-items: center; /* Center-align menu items vertically */
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     nav li {
-        margin: 0 15px; /* Add spacing between menu items */
+        margin: 0 15px;
     }
 
     nav a {
-        writing-mode: horizontal-tb; /* Reset text orientation */
-        transform: none; /* Reset text rotation */
-        text-align: center; /* Center-align text horizontally */
+        writing-mode: horizontal-tb;
+        transform: none;
+        text-align: center;
     }
 }
-
