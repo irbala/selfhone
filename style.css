@@ -157,7 +157,8 @@ section {
 }
 
 .go-up-button a {
-    color: white;
+    color: #183A37;
+    background-color: white;
     text-decoration: none;
 }
 
@@ -179,7 +180,9 @@ section {
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    /* Adjust the max-width as needed */
+    body {
+        padding-top: 60px; /* Add padding to the top of the body to make space for the fixed navigation */
+    }
 
     /* Center-align text */
     h1, h2, p {
@@ -208,4 +211,20 @@ section {
         bottom: 20px;
         right: 20px;
     }
+    nav {
+        width: 100%; /* Make the navigation full width on smaller screens */
+        height: auto; /* Allow the navigation to adjust its height based on content */
+        position: static; /* Change the position to static so it's not fixed on smaller screens */
+        flex-direction: row; /* Change flex direction to horizontal on smaller screens */
+    }
+
+    nav ul {
+        flex-direction: row; /* Align navigation items horizontally */
+    }
+
+    nav li {
+        margin-right: 15px; /* Add spacing between navigation items */
+        margin-bottom: 0; /* Remove margin-bottom from navigation items */
+    }
 }
+
