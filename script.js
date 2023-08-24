@@ -31,8 +31,10 @@ scrollFadeElements.forEach(element => {
     observer.observe(element);
 });
 
-$(document).ready(function() {
-    $('.slider').slick({
+var j = jQuery.noConflict();
+
+j(document).ready(function() {
+    j('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
