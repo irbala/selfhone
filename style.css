@@ -37,9 +37,10 @@ nav {
 }
 
 nav ul {
-    list-style: none;
+ /*   list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0; disable for testing */
+    display: none;
 }
 
 nav li {
@@ -60,6 +61,38 @@ nav a {
 
 nav a:hover {
     color: #60BEB6;
+}
+
+/* Style the toggle button */
+#menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animate the toggle button's icon when the menu is open */
+.menu-active .menu-icon {
+    transform: rotate(45deg);
+}
+
+.menu-active .menu-icon:before,
+.menu-active .menu-icon:after {
+    transform: rotate(-90deg);
+}
+
+/* Display the navigation menu when the toggle button is clicked */
+.menu-active nav ul {
+    display: block;
 }
 
 section {
