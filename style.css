@@ -15,7 +15,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: 'Quicksand', sans-serif; 
-    background-color: #f5f5f5; 
+    background-color: #3B413C; 
     overflow-x: hidden;
 }
 
@@ -72,12 +72,12 @@ section {
 }
 
 #home {
-    background-color: #007bff;
+    background-color: #9DB5B2;
     color: white;
 }
 
 #about {
-    background-color: #ff8800;
+    background-color: #739691;
     color: white;
 }
 
@@ -103,7 +103,7 @@ section {
 
 /* Individual Project Card */
 .project {
-    background-color: #333;
+    background-color: #94D1BE;
     color: white;
     padding: 2rem;
     text-align: center;
@@ -137,7 +137,7 @@ section {
 }
 
 #contact {
-    background-color: #d9534f;
+    background-color: #DAF0EE;
     color: white;
 }
 
