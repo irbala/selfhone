@@ -148,7 +148,7 @@ section {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #183A37;
+    background-color: white;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -164,7 +164,7 @@ section {
 }
 
 .go-up-button:hover {
-    background-color: #2F746E;
+    background-color: #DAF0EE;
 }
 
 /* Scroll Fade Animation */
