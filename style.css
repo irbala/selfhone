@@ -1,0 +1,204 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif; 
+    background-color: #f5f5f5; 
+    overflow-x: hidden;
+
+}
+
+/* Fixed Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px; /* Set a fixed width for the navigation */
+    height: 100vh; /* Make the navigation full height */
+    background-color: #fff; /* Adjust background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column; /* Align links vertically */
+    justify-content: space-around; /* Space evenly along the column */
+    align-items: center; /* Center-align items horizontally */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+      margin-bottom: 35px; /* Add margin between navigation items */
+
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+    writing-mode: vertical-lr; /* Set text to vertical writing mode */
+    transform: rotate(180deg);
+    text-orientation: mixed; /* Allow mixed orientation for better legibility */
+    text-align: center; /* Center the text horizontally */
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#home {
+    background-color: #007bff;
+    color: white;
+}
+
+#about {
+    background-color: #ff8800;
+    color: white;
+}
+
+#projects {
+    background-color: #00c851;
+    color: white;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: center; /* Center-align items vertically */
+    justify-items: center; /* Center-align items horizontally */
+    padding: 2rem;
+}
+
+/* Individual Project Card */
+.project {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure cards take up full width */
+    max-width: 300px; /* Set maximum width for cards */
+}
+
+.project h3 {
+    margin-bottom: 1rem;
+}
+
+.project p {
+    margin-bottom: 1.5rem;
+}
+
+.project .visit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.project .visit-button:hover {
+    background-color: #0056b3;
+}
+
+#contact {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Go Up Button Styling */
+.go-up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.go-up-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.go-up-button:hover {
+    background-color: #0056b3;
+}
+
+/* Scroll Fade Animation */
+.scroll-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-fade.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Adjust the max-width as needed */
+
+    /* Center-align text */
+    h1, h2, p {
+        text-align: center;
+    }
+
+    /* Adjust padding for better spacing */
+    section {
+        padding: 1rem;
+    }
+
+    /* Adjust font size for better readability */
+    h1 {
+        font-size: 2rem;
+    }
+
+
+    /* Adjust project width for better spacing */
+    .project {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Adjust Go Up button position for better visibility */
+    .go-up-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}
