@@ -21,6 +21,7 @@ body {
 
 /* Fixed Navigation */
 nav {
+    color: #183A37;
     position: fixed;
     top: 0;
     left: 0;
@@ -58,7 +59,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #007bff;
+    color: #60BEB6;
 }
 
 section {
@@ -72,12 +73,12 @@ section {
 }
 
 #home {
-    background-color: #9DB5B2;
-    color: white;
+    background-color: #A9DBD8;
+    color: #183A37;
 }
 
 #about {
-    background-color: #739691;
+    background-color: #60BEB6;
     color: white;
 }
 
@@ -87,7 +88,7 @@ section {
 }
 
 #projects {
-    background-color: #00c851;
+    background-color: #2F746E;
     color: white;
 }
 
@@ -103,7 +104,7 @@ section {
 
 /* Individual Project Card */
 .project {
-    background-color: #94D1BE;
+    background-color: #333;
     color: white;
     padding: 2rem;
     text-align: center;
@@ -137,8 +138,8 @@ section {
 }
 
 #contact {
-    background-color: #3B413C;
-    color: white;
+    background-color: #183A37;
+    color: #A9DBD8;
 }
 
 /* Go Up Button Styling */
