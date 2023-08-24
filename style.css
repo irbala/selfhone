@@ -39,7 +39,7 @@ nav ul {
 
 nav li {
     margin: 0;
-      margin-bottom: 35px; /* Add margin between navigation items */
+    margin-bottom: 35px; /* Add margin between navigation items */
 }
 
 nav a {
@@ -185,7 +185,6 @@ section {
     h1 {
         font-size: 2rem;
     }
-
 
     /* Adjust project width for better spacing */
     .project {
