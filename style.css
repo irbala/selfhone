@@ -216,5 +216,32 @@ section {
         right: 20px;
     }
 
+    nav {
+        position: static; /* Remove the fixed positioning */
+        width: auto; /* Remove the fixed width */
+        height: auto; /* Remove the fixed height */
+        background-color: transparent; /* Remove the background color */
+        box-shadow: none; /* Remove the box shadow */
+        flex-direction: row; /* Change to horizontal layout */
+        align-items: center; /* Center-align items horizontally */
+        justify-content: space-around; /* Space items evenly along the row */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Arrange menu items horizontally */
+        justify-content: center; /* Center-align menu items horizontally */
+        align-items: center; /* Center-align menu items vertically */
+    }
+
+    nav li {
+        margin: 0 15px; /* Add spacing between menu items */
+    }
+
+    nav a {
+        writing-mode: horizontal-tb; /* Reset text orientation */
+        transform: none; /* Reset text rotation */
+        text-align: center; /* Center-align text horizontally */
+    }
 }
 
