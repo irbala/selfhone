@@ -142,6 +142,9 @@ section {
     background-color: #183A37;
     color: #A9DBD8;
 }
+#contact a {
+    color: #A9DBD8;
+}
 
 /* Go Up Button Styling */
 .go-up-button {
