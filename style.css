@@ -358,6 +358,13 @@ section {
     body, h1, h2, p {
         text-align: center;
     }
+    
+    body {
+      width:100%;
+      padding: 10px;
+      margine: 10px;
+      
+      }
 
     section {
         padding: 1rem;
