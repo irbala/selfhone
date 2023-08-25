@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width:100%;
     min-height: 100vh;
     margin: 0;
 	font-family: "Inter", sans-serif;
@@ -135,7 +136,8 @@ section {
 
 #about p {
     max-width: 800px;
-    margin: 0 auto;
+padding:10px;
+margin:10px;
   text-align: justify;
 }
 
@@ -362,8 +364,7 @@ section {
     body {
       width:100%;
       padding: 10px;
-      margine: 10px;
-      
+      margin: 10px;
       }
 
     section {
