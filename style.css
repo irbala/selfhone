@@ -8,11 +8,12 @@ body, h1, h2, h3, p {
 }
 
 body {
+  box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:100%;
     min-height: 100vh;
     margin: 0;
 	font-family: "Inter", sans-serif;
@@ -358,13 +359,12 @@ margin:10px;
 @media screen and (max-width: 768px) {
 
     body, h1, h2, p {
+      box-sizing: border-box;
         text-align: center;
     }
     
     body {
       width:100%;
-      padding: 10px;
-      margin: 10px;
       }
 
     section {
