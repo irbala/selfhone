@@ -12,10 +12,6 @@
 <body>
     <header>
         <nav>
-            <button id="menu-toggle" aria-label="Toggle Navigation Menu">
-                <span class="menu-icon"></span>
-            </button>
-
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -27,38 +23,59 @@
 
     <!-- home section-->
     <section id="home" class="scroll-fade">
-        <h1>Selfhone</h1>
-        <h2>By: Fay Alabri</h2>
+<div class="nine">
+  <h1>Selfhone<span>by: Fay Alabri</span></h1>
+</div>
     </section>
 
     <!-- about section-->
     <section id="about" class="scroll-fade">
         <h2>About Selfhone</h2>
-        <p>Welcome to my journey as a beginner web developer. After finding myself engrossed in my "cellphone", I came up with the name "Selfhone" as a combination of "self" and "hone" as a representation of my journey from being captive to my device to actively honing and shaping my skills and abilities. The main idea is conveying the idea of continuous growth and refinement and representing self-improvement along the way. Aiming to encapsulate the transformation and growth as a web developer. This portfolio is a testament to my pursuit of perpetual learning and my creative ardor for web development, where imagination and progress intertwine.</p>
+        <p>Welcome to my journey as a beginner web developer. Aiming to encapsulate the transformation and growth as a web developer after finding myself captive to my cellphone, I came up with the name <strong>"Selfhone"</strong> by turning the word <strong>"cellphone"</strong> into a combination of "self" and "hone" representing my journey in actively honing and shaping my skills and abilities. The main concept is conveying the idea of continuous growth and refinement as i'm representing self-improvement along the way.</p>
     </section>
 
     <!-- project section-->
     <section id="projects" class="scroll-fade">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
-                <a class="visit-button" href="#">Visit</a>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
-                <a class="visit-button" href="#">Visit</a>
-            </div>
-            <!-- Repeat project divs for each project -->
-        </div>
+        <h2>Projects</h2> 
+      
+      <!-- card test-->
+      <div class="card">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- Add an anchor element around the image element -->
+       <image x="0" y="0" width="24" height="24" href="https://cdn-icons-png.flaticon.com/512/197/197374.png" />
+    <p class="card__title">Project 1</p> 
+</svg>
+  <div class="card__content">
+    <p class="card__description">A planner for our trip to London. 2023.</p>
+      <button class="card__button"><a href="https://irbala.github.io/London/">Visit</a></button>
+  </div>
+</div>
+      <br>
+      <br>
+      
+      
+        <div class="card">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- Add an anchor element around the image element -->
+         <image x="0" y="0" width="24" height="24" href="https://cdn-icons-png.flaticon.com/512/5110/5110208.png" />
+    <p class="card__title">Project 2</p> 
+
+</svg>
+  <div class="card__content">
+    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <button class="card__button"><a href="#">Visit</a></button>
+  </div>
+</div>
+            <!-- card test-->
+
+      
+      
     </section>
 
     <!-- contact section-->
     <section id="contact" class="scroll-fade">
         <h2>Contact Me</h2>
-        <p>Email: your@email.com</p>
+        <p>Email: fayalabri@gmail.com</p>
         <p>Connect with me on social media:</p>
         <ul>
             <li><a href="#">LinkedIn</a></li>
@@ -66,15 +83,16 @@
         </ul>
     </section>
 
-    <div class="go-up-button">
-        <a href="#home">&#8593; Go Up</a>
-    </div>
-
+  <a id="scroll-up" class="scroll-up" href="#">
+	<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0 0h24v24H0z" fill="none"></path>
+		<path fill="rgba(255,255,255,1)" d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z">
+		</path>
+	</svg>
+</a>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="script.js"></script>
-
-    
 </body>
 </html>
