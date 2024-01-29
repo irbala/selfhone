@@ -124,6 +124,8 @@ section {
     justify-content: center;
     padding: 2rem;
     overflow: hidden;
+	scroll-snap-align: start;
+	scroll-snap-stop: normal;
 }
 
 #home {
