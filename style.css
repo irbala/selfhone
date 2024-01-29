@@ -125,7 +125,7 @@ section {
     padding: 2rem;
     overflow: hidden;
 	scroll-snap-align: start;
-	scroll-snap-stop: normal;
+	scroll-snap-stop: always;
 }
 
 #home {
